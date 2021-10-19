@@ -159,7 +159,7 @@ export function writePackage(
  * @returns Path to `package.json`, or `undefined` if not found.
  */
 export function findPackage(startDir?: string): string | undefined {
-  return pkgUp.sync({ cwd: startDir ? startDir : process.cwd() }) ?? undefined;
+  return pkgUp.sync({ cwd: startDir || process.cwd() }) ?? undefined;
 }
 
 /**
@@ -173,7 +173,7 @@ export function findPackage(startDir?: string): string | undefined {
  * @returns Path to `package.json`, or `undefined` if not found.
  */
 export function findPackageDir(startDir?: string): string | undefined {
-  return pkgDir.sync(startDir ? startDir : process.cwd()) ?? undefined;
+  return pkgDir.sync(startDir || process.cwd()) ?? undefined;
 }
 
 /**

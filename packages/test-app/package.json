@@ -35,6 +35,7 @@
     "@rnx-kit/babel-preset-metro-react-native": "*",
     "@rnx-kit/cli": "*",
     "@rnx-kit/metro-config": "*",
+    "@rnx-kit/metro-exotic-transformer": "*",
     "@rnx-kit/metro-plugin-cyclic-dependencies-detector": "*",
     "@rnx-kit/metro-plugin-duplicates-checker": "*",
     "@rnx-kit/metro-plugin-typescript-validation": "*",
