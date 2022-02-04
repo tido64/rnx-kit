@@ -1,5 +1,5 @@
 {
-  "private": "true",
+  "private": true,
   "name": "@rnx-kit/eslint-config",
   "version": "0.0.1",
   "description": "Shareable ESLint config for @rnx-kit",
