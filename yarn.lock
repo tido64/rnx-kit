@@ -1821,7 +1821,7 @@
     slash "^3.0.0"
     strip-ansi "^6.0.0"
 
-"@jest/create-cache-key-function@^27.0.1":
+"@jest/create-cache-key-function@^27.0.1", "@jest/create-cache-key-function@^27.4.2":
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/@jest/create-cache-key-function/-/create-cache-key-function-27.5.1.tgz#7448fae15602ea95c828f5eceed35c202a820b31"
   integrity sha512-dmH1yW+makpTSURTy8VzdUwFnfQh1G8R+DxO2Ho2FFmBbKFEVm+3jWdvFhE2VqB/LATCTokkP0dotjyQyw5/AQ==
@@ -2731,6 +2731,13 @@
     "@swc/core-win32-arm64-msvc" "1.2.242"
     "@swc/core-win32-ia32-msvc" "1.2.242"
     "@swc/core-win32-x64-msvc" "1.2.242"
+
+"@swc/jest@^0.2.0":
+  version "0.2.22"
+  resolved "https://registry.yarnpkg.com/@swc/jest/-/jest-0.2.22.tgz#70d02ac648c21a442016d7a0aa485577335a4c9a"
+  integrity sha512-PIUIk9IdB1oAVfF9zNIfYoMBoEhahrrSvyryFANas7swC1cF0L5HR0f9X4qfet46oyCHCBtNcSpN0XJEOFIKlw==
+  dependencies:
+    "@jest/create-cache-key-function" "^27.4.2"
 
 "@swc/wasm@1.2.122":
   version "1.2.122"
