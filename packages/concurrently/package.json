@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build": "cargo build",
+    "lint": "cargo check",
+    "test": "cargo test"
+  }
+}
