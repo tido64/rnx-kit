@@ -18,14 +18,16 @@
     "@babel/parser": "^7.0.0",
     "@babel/types": "^7.0.0",
     "@microsoft/tsdoc": "^0.13.0",
-    "@rnx-kit/golang": "^0.1.8",
+    "@rnx-kit/golang": "*",
     "depcheck": "^1.0.0",
     "esbuild": "^0.14.10",
+    "eslint": "^8.0.0",
     "fs-extra": "^10.0.0",
     "glob": "^7.0.0",
     "jest": "^27.0.0",
     "markdown-table": "^2.0.0",
     "midgard-yarn": "^1.23.24",
+    "prettier": "^2.0.0",
     "typescript": "^4.0.0",
     "workspace-tools": "^0.18.2",
     "yargs": "^16.0.0"
@@ -39,8 +41,10 @@
     "ignoreMatches": [
       "@rnx-kit/dep-check",
       "@rnx-kit/jest-preset",
+      "eslint",
       "jest",
       "midgard-yarn",
+      "prettier",
       "typescript",
       "workspace-tools"
     ]

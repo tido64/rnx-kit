@@ -20,7 +20,6 @@
     "bundle+esbuild": "lage bundle+esbuild --verbose --grouped",
     "change": "changeset add",
     "change:check": "changeset status",
-    "ci": "yarn --cache-folder .yarn-offline-mirror --prefer-offline --frozen-lockfile --non-interactive",
     "clean": "lage cache --clear && lage clean --log-level warn --grouped",
     "depcheck": "lage depcheck --log-level warn --grouped",
     "format": "lage format --log-level warn --grouped",
@@ -33,7 +32,7 @@
     "update-readme:main": "node scripts/update-readme.js",
     "version:changesets": "node scripts/disableChangesetsCommitAndBumpPackages.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.0.0",
     "@changesets/cli": "^2.18.0",
     "@rnx-kit/dep-check": "*",
@@ -50,19 +49,19 @@
     "suggestion-bot": "^1.2.2"
   },
   "engines": {
-    "node": ">=14.15"
+    "node": ">=14.15",
+    "npm": "use Yarn instead!"
   },
+  "packageManager": "yarn@3.2.0",
   "resolutions": {
     "eslint-plugin-react": "^7.26.0",
     "micromatch": "^4.0.0"
   },
-  "workspaces": {
-    "packages": [
-      "packages/@types/*",
-      "packages/*",
-      "scripts"
-    ]
-  },
+  "workspaces": [
+    "packages/@types/*",
+    "packages/*",
+    "scripts"
+  ],
   "eslintConfig": {
     "extends": "@rnx-kit/eslint-config"
   },
