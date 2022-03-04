@@ -18,6 +18,7 @@ function discardResult() {
  */
 function execute(command, ...args) {
   return new Promise((resolve, reject) => {
+    console.log(process.cwd(), command, ...args);
     spawn(command, args, { stdio: "inherit" }).on("close", (code) => {
       if (code === 0) {
         resolve();

@@ -20,5 +20,8 @@
   "dependencies": {
     "@microsoft/eslint-plugin-sdl": "^0.1.9",
     "@rnx-kit/eslint-plugin": "*"
+  },
+  "devDependencies": {
+    "@rnx-kit/scripts": "*"
   }
 }
