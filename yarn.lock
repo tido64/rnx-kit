@@ -2592,6 +2592,36 @@
   dependencies:
     nanoid "^3.1.23"
 
+"@rometools/cli-darwin-arm64@0.8.0-next.ff4153b":
+  version "0.8.0-next.ff4153b"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-darwin-arm64/-/cli-darwin-arm64-0.8.0-next.ff4153b.tgz#8022a4e50d7e92b2469c470bdde00ad4a37f2bd5"
+  integrity sha512-P0BCJyN50Go7U5AG2Ujh8rIwmnaGpOqYqpsmF2J9hRX8zdMiIpYdbmAG6q0B6kibmwYcwS0+JgIdrYn4bl9Hpg==
+
+"@rometools/cli-darwin-x64@0.8.0-next.ff4153b":
+  version "0.8.0-next.ff4153b"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-darwin-x64/-/cli-darwin-x64-0.8.0-next.ff4153b.tgz#ce9c9c3919b1d1af67d8cc16c686ebfa06ae875c"
+  integrity sha512-d9PuyMo4Nc16/YrWaskU+2mygYK1+Vg5GjHJswX51fkUsNlVbNFqDtYLce6m1Oe7UAh0GcsViOvF3jw7fDncbQ==
+
+"@rometools/cli-linux-arm64@0.8.0-next.ff4153b":
+  version "0.8.0-next.ff4153b"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-linux-arm64/-/cli-linux-arm64-0.8.0-next.ff4153b.tgz#0100719de5a7d16ae30fdeb80d4661eaca91466c"
+  integrity sha512-evoUPlk5t6LshpGA9bLB1+42sakKZspyAOJP5P5Fp9HQc9Lvg7c3H5dSosSPSsKK3EVk9ClNVNJq9XMKS5qABQ==
+
+"@rometools/cli-linux-x64@0.8.0-next.ff4153b":
+  version "0.8.0-next.ff4153b"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-linux-x64/-/cli-linux-x64-0.8.0-next.ff4153b.tgz#9255f73ac168720e5a656ee1893e7928383cd596"
+  integrity sha512-vjMS1l32GC1YZC0ed9Ryr85IDYWKb4gcLgLaGTiaGEgB8tjlWAvB4h8IdomT8bJYSYjgdZOHuV5lTJ5pI2VfKg==
+
+"@rometools/cli-win32-arm64@0.8.0-next.ff4153b":
+  version "0.8.0-next.ff4153b"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-win32-arm64/-/cli-win32-arm64-0.8.0-next.ff4153b.tgz#ebf46b745e4296b345e0840ea6b1698d6b29ca37"
+  integrity sha512-W5sUoDXuE7+bK/hNtafctYT+lfxlLacqeGsw7apFczXa8c7H+SrcHneveTwzl0iUxY2R+XY9wUe4aDa+v+zYlw==
+
+"@rometools/cli-win32-x64@0.8.0-next.ff4153b":
+  version "0.8.0-next.ff4153b"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-win32-x64/-/cli-win32-x64-0.8.0-next.ff4153b.tgz#ba2b6c97b60cb55da7f23110400f15dbbe2aa97c"
+  integrity sha512-zpEhtqM5K3WfxDv2/bgyXOU6R33lfwuDbehM7eMsaRgwMIA7vbLenxX7Y/hpgPqhZ2MpodJhFLuK8m9yIQ7Rxw==
+
 "@segment/loosely-validate-event@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@segment/loosely-validate-event/-/loosely-validate-event-2.0.0.tgz#87dfc979e5b4e7b82c5f1d8b722dfd5d77644681"
@@ -10401,6 +10431,18 @@ rimraf@~2.6.2:
   integrity sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
   dependencies:
     glob "^7.1.3"
+
+rome@^0.8.0-next.ff4153b:
+  version "0.8.0-next.ff4153b"
+  resolved "https://registry.yarnpkg.com/rome/-/rome-0.8.0-next.ff4153b.tgz#f09b3bd29e9ee2e2dff35021baab59e990793db1"
+  integrity sha512-Hf1gx01l+6JRRKK4XSThLC7d7f8QuFTU5OyaSnGdCd0M//uBVBKSt5b9v9TWK6fT98ZjKMvmMOcZItHwLVJx7g==
+  optionalDependencies:
+    "@rometools/cli-darwin-arm64" "0.8.0-next.ff4153b"
+    "@rometools/cli-darwin-x64" "0.8.0-next.ff4153b"
+    "@rometools/cli-linux-arm64" "0.8.0-next.ff4153b"
+    "@rometools/cli-linux-x64" "0.8.0-next.ff4153b"
+    "@rometools/cli-win32-arm64" "0.8.0-next.ff4153b"
+    "@rometools/cli-win32-x64" "0.8.0-next.ff4153b"
 
 rsvp@^4.8.4:
   version "4.8.5"

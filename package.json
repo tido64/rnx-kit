@@ -37,7 +37,8 @@
     "@changesets/cli": "^2.22.0",
     "@rnx-kit/dep-check": "*",
     "nx": "^14.4.0",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.0",
+    "rome": "^0.8.0-next.ff4153b"
   },
   "engines": {
     "node": ">=14.18"
