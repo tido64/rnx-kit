@@ -319,8 +319,18 @@ export async function deploy(
   }
 
   const developerDir = getDeveloperDirectory();
-  if (!developerDir) {
-    spinner.warn("Xcode is required to install and launch apps");
+  if (!developerDir || deviceType === "native") {
+    if (os.arch() !== "arm64") {
+      spinner.warn("Xcode is required to install and launch apps");
+    } else {
+      spinner.start(`Extracting ${archive}`);
+      const app = await untar(archive);
+
+      spinner.text = `Launching ${app}`;
+      await open(app);
+
+      spinner.succeed(`Launched ${app}`);
+    }
     return;
   }
 

@@ -51,7 +51,12 @@ Defaults to `auto`.
 
 Target device type. This is currently only implemented for iOS.
 
-Supported device types are `device`, `emulator`, `simulator`.
+Supported device types are:
+
+- `device` — physical devices such as an Android phone or iPhone
+- `emulator` — an environment that emulates a physical device; same as `simulator`
+- `native` — if supported, run the app as-is on the local machine (e.g. iOS app on Apple silicon Macs)
+- `simulator` — an environment that simulates a physical device; same as `emulator`
 
 Specifying `emulator`/`simulator` implies `--distribution local`.
 
